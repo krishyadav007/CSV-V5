@@ -13,30 +13,6 @@
 
 <body>
   <!-- partial:index.partial.html -->
-
-  <nav class="navbar navbar-expand-lg navbar-dark bg-secondary">
-    <div class="container-fluid">
-
-      <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarCollapse">
-        <div class="mx-auto">
-        <div class="navbar-nav">
-          <a href="/" class="nav-item nav-link text-white fw-bold" style="margin-left: 15px">Home</a>
-          <a href="/ai" class="nav-item nav-link text-white fw-bold" style="margin-left: 15px">AI</a>
-          <a href="/ml" class="nav-item nav-link text-white fw-bold" style="margin-left: 15px">ML</a>
-      
-        </div></div>
-        <div class="navbar-nav">
-          <a href="/login" class="nav-item nav-link" ><button type="button"
-              class="btn btn-success">Login</button></a>
-          <a href="/sign-up" class="nav-item nav-link" ><button type="button"
-              class="btn btn-success">Sign Up</button></a>
-        </div>
-      </div>
-    </div>
-  </nav>
   <div class="row">
     <div class="col-sm-6 col-md-7 intro-section">
       <div class="brand-wrapper">
@@ -59,15 +35,36 @@
     <div class="col-sm-6 col-md-5 form-section">
       <div class="login-wrapper">
         <!-- <h2 class="login-title">Sign in</h2> -->
-        <br>
-        <!--             <div class="card" style="width: 18rem;"></div> -->
-        <ul class="list-group list-group-flush" style="font-size: 20px">
-          <li class="list-group-item pt-5 pb-5">Daily briefing</li>
-          <li class="list-group-item pt-5 pb-5">My industry</li>
-          <li class="list-group-item pt-5 pb-5">Explore</li>
-        </ul>
-        <br>
-        <br>
+        
+      
+                  <div class="pb-3">
+                    <form action="/login" method="post">
+                    <h2 class="fw-bold mb-2 text-uppercase">Login</h2>
+                    <p class="text-white-50 mb-5">Please enter your login and password!<br></p>
+                    
+                    <div class="form-outline form-white mb-4">
+                      <input type="text" id="usernametxtbox" name="username" class="form-control form-control-lg" />
+                      <label class="form-label" for="usernametxtbox">User Name</label>
+                    </div>
+      
+                    <div class="form-outline form-white mb-4">
+                      <input type="password" id="pass" name="password" class="form-control form-control-lg" />
+                      <label class="form-label" for="pass">Password</label>
+                    </div>
+      
+                    
+                    <button class="btn btn-outline-secondary btn-lg px-5 h-100" type="submit">Login</button>
+                </form>
+      
+                  </div>
+      
+                  <div>
+                    <p class="mb-0">Don't have an account? <a href="/sign-up" class="text-white-200 fw-bold">Sign Up</a>
+                    </p>
+                  </div>
+      
+               
+        </div>
         <!-- <form action="#!"><div class="form-group"><label for="email" class="sr-only">Email</label><input type="email" name="email" id="email" class="form-control" placeholder="Email"></div><div class="form-group mb-3"><label for="password" class="sr-only">Password</label><input type="password" name="password" id="password" class="form-control" placeholder="Password"></div><div class="d-flex justify-content-between align-items-center mb-5"><input name="login" id="login" class="btn login-btn" type="button" value="Login"><a href="#!" class="forgot-password-link">Password?</a></div></form>            -->
         <!-- <p class="login-wrapper-footer-text">Need an account? <a href="#!" class="text-reset">Signup here</a></p> -->
       </div>
