@@ -393,3 +393,12 @@ body {
   color: black;
   font-weight: bold;
 }
+
+.date:hover{
+  background-color: black;
+  color: white;
+  font-weight: bold;
+  border-radius: 50%;
+  border-width: 3px;
+  transition-duration: 100ms;
+}
