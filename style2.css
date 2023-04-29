@@ -164,6 +164,29 @@ body {
   object-position: center;
   filter: grayscale(30%) brightness(70%);
 }
+.social-link {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #ddd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #666;
+  border-radius: 50%;
+  transition: all 0.3s;
+  font-size: 0.9rem;
+}
+
+.social-link:hover,
+.social-link:focus {
+  background: #ddd;
+  text-decoration: none;
+  color: #555;
+}
+
+.progress {
+  height: 10px;
+}
 .intro-section {
   background-image: url(https://images.unsplash.com/photo-1601733969387-031f1b300d44?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80);
   /*filter: grayscale(80%);*/
